@@ -1,0 +1,379 @@
+body {
+  margin: 0;
+  font-family: "Ubuntu Sans", sans-serif;
+  background-color: #f5f5f5;
+}
+h1, p, button {
+  font-family: "Ubuntu Sans", sans-serif;
+}
+
+
+/* РОЗКЛАДКА */
+.hero {
+
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  margin-bottom: 0;
+}
+
+/* ЛІВА ЧАСТИНА */
+.hero-left{
+  width: 50%;
+  background: #f5f5f5;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    position: relative;
+  z-index: 2;
+}
+
+
+/* ПРАВА ЧАСТИНА */
+.hero-right {
+  width: 50%;
+
+  background-image: url("your-photo.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+
+
+/* ТЕКСТ */
+h1 {
+  font-size: 80px;
+  margin: 20px 0;
+  color: #4a2c1f;
+}
+
+p {
+  margin: 10px 0;
+}
+
+button {
+  width: fit-content;
+  padding: 10px 20px;
+  background: #412A1C;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+/* ВЕРХНЯ ПАНЕЛЬ */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.logo {
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.contact {
+  background: #412A1C;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+h1 {
+  font-size: 90px;
+  margin: 20px 0;
+  color: #4a2c1f;
+  letter-spacing: 5px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.contact {
+  background: #4a2c1f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.hero-left {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  margin: 40px 0 20px;
+}
+
+.username {
+   margin-top: -20px;
+   margin-bottom: 60px;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+
+}
+h1 {
+  font-size: 130px;
+  letter-spacing: 10px;
+  font-weight: 400; /* було жирніше */
+  color: #4a2c1f;
+}
+.logo {
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: #333;
+}
+.contact {
+  background: #4a2c1f;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  letter-spacing: 2px;
+  font-size: 12px;
+  }
+
+.desc {
+  font-size: 50px;
+  font-weight: 100;
+  line-height: 1.3;
+  letter-spacing: 2px;
+
+}
+
+.desc br {
+  line-height: 2;
+}
+.username {
+  color: #777;
+}
+
+.socials {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.socials i {
+  font-size: 20px;
+  color: #4a2c1f;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.socials i:hover {
+  transform: scale(1.2);
+}
+
+.about {
+  margin-top: 0 !important;
+  padding-top: 0;
+  padding-bottom: 60px;
+}
+.about h2 {
+  margin-top: 0;
+}
+
+.about-title {
+  text-align: center;
+   background: linear-gradient(to bottom, #412A1C, #8C7F7F);
+  padding-bottom: 60px;
+  color: white;
+  padding: 40px 0;
+  font-size: 60px;
+  letter-spacing: 5px;
+    margin-top: 0;
+}
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+    position: relative;
+  top: 0; 
+
+  max-width: 1100px;
+  margin: 0 auto;
+
+  gap: 60px;
+  padding: 50px 20px;
+}
+
+/* LEFT */
+.about-left {
+  flex: 1;
+  min-width: 300px;
+}
+.profile {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 30px;
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  object-position: bottom; /* або center, bottom */
+}
+
+.about h3 {
+    margin-top: 30px;
+}
+.tools {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.tools span {
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.field {
+  list-style: none;
+  padding: 0;
+}
+
+.field li {
+  margin: 8px 0;
+}
+
+/* RIGHT */
+.about-right {
+  max-width: 650px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  flex: 1.2;
+  min-width: 400px;
+  align-self: flex-start;
+  margin-top: 0;
+
+}
+
+.about-text {
+  margin: 20px 0;
+  line-height: 1.6;
+  font-weight: 300;
+   margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+/* EDUCATION */
+
+.education h3 {
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: 2px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+
+}
+
+.education {
+      background-color: transparent; /* або такий самий як body */
+  border: 1px solid #e0e0e0; /* тонка обводка */
+  border-radius: 20px; /* м’які кути */
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+.edu-item {
+  margin-bottom: 15px;
+   padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 80;
+}
+.edu-item:last-child {
+  border-bottom: none;
+}
+/* назва */
+.edu-title {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+/* опис */
+.edu-sub {
+  font-weight: 300;
+  color: #777;
+  margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+/* дати */
+.edu-date {
+  font-weight: 400;
+}
+.edu-item p {
+  margin: 0 0 8px 0;
+}
+
+.edu-item hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+.languages-bar {
+  background: linear-gradient(to right, #412A1C, #8C7F7F);
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.languages-bar span:not(:last-child)::after {
+  content: " — ";
+  margin-left: 80px;
+}
+.skills {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+  max-width: 400px; 
+}
+.skills-left,
+.skills-right {
+     text-align: left;
+  flex: 1;
+}
+.skills-divider {
+  width: 1px;
+  background: #ccc;
+  height: 150px; /* 🔥 фікс */
+  margin-top: 20px;
+}
+.skills ul {
+  list-style: none;
+   margin: 0;
+  padding: 0;
+}
+
+.skills li {
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+.skills h3 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
